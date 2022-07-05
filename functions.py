@@ -35,3 +35,15 @@ def noVowels (message):
 
 your_message = input("Enter message: ")
 print("Your secret message is", noVowels(your_message))
+
+def changeCase(s):
+    new_s = ""
+    for letter in s:
+        if letter.islower():
+            new_s = new_s + letter.upper()
+        else:
+            new_s = new_s + letter.lower()
+    return new_s
+
+message = "One Two"
+print(changeCase(message))
