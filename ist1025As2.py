@@ -2,6 +2,7 @@
 """
 Assignment on Strings
 Author: Nzivu Briana
+ID : 665436
 """
 
 myString = input("What is your statement")
@@ -9,24 +10,24 @@ myString = input("What is your statement")
 for i in range (10):
     print(myString)
 
-#Prints length of String
+# Prints length of String
 noWords = len(myString)
 print(noWords)
 
-#Prints first character of the String
+# Prints first character of the String
 firstWord = myString[0]
 print(firstWord)
 
-#Prints first three characters of the string
+# Prints first three characters of the string
 print(myString[0:3])
 
-#Prints last three characters of a string
+# Prints last three characters of a string
 print(myString[-3::])
 
-#Prints last String backwards
+# Prints last String backwards
 print(myString[::-1])
 
-#The seventh character of the string if the string is long enough and a message otherwise
+# The seventh character of the string if the string is long enough and a message otherwise
 if len(myString) >= 7:
     print(myString[6])
 else:
