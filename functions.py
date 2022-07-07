@@ -36,6 +36,7 @@ def noVowels (message):
 your_message = input("Enter message: ")
 print("Your secret message is", noVowels(your_message))
 
+# Changes two letters to uppercase
 def changeCase(s):
     new_s = ""
     for letter in s:
@@ -47,3 +48,12 @@ def changeCase(s):
 
 message = "One Two"
 print(changeCase(message))
+
+# Runs repeatedly until the user enters a valid interger.
+def getValidInterger (prompt, lower, upper):
+    while True:
+        number = int(input(prompt))
+        if number < lower or number > upper:
+            print("Error the number must range from" + str(lower) + "through" + str(upper))
+        else:
+            return number
