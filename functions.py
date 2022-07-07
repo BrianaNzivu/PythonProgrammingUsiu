@@ -57,3 +57,26 @@ def getValidInterger (prompt, lower, upper):
             print("Error the number must range from" + str(lower) + "through" + str(upper))
         else:
             return number
+
+# Encrypter version two
+def encrypt(source):
+    code = ""
+    for ch in source:
+        code = code + str(ord(ch)) + " "
+        return code
+message = input("Enter message")
+secret = encrypt(message)
+print(secret)
+
+# Decrypter
+def decrypter(code):
+    source = ""
+    for word in code.split():
+        source = source + chr(int(word))
+    return source
+message = input("Enter your messsage: ")
+secret = encrypt(message)
+print("Secret message:", secret)
+print()
+print("Original message:", decrypter(secret))
+
