@@ -17,3 +17,10 @@ for items in numbers:
 print(numbers)
 print()
 
+"""
+Splitting in lists
+"""
+s = "Python is cool"
+lst = s.split()
+print(lst)
+
