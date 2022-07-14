@@ -10,3 +10,5 @@ print(numbers)
 
 for v in zip(numbers):
     print(*v)
+
+
