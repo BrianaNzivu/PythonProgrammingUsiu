@@ -42,7 +42,7 @@ for key in shopping:
 
 print("This shopping will cost Ksh", total)
 
-# More advanced shopping one
+# More advanced shopping one using a while loop
 myShopping = {}
 total = 0
 while True:
@@ -55,4 +55,12 @@ while True:
 for key in myShopping:
     print(key, myShopping[key])
     total = total + myShopping[key]
-print('Your total is', total)
+
+# More advanced shopping one using functions
+def calculateTotal (d):
+    total = 0
+    for key in d:
+        total = total + d[key]
+    return total
+
+print('Your shopping will cost', calculateTotal(myShopping))
