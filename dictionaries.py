@@ -41,3 +41,18 @@ for key in shopping:
     total = total + shopping[key]
 
 print("This shopping will cost Ksh", total)
+
+# More advanced shopping one
+myShopping = {}
+total = 0
+while True:
+    item = input('Enter an item:')
+    if item == "":
+        break
+    price = float(input('Enter the price:'))
+    myShopping[item] = price
+
+for key in myShopping:
+    print(key, myShopping[key])
+    total = total + myShopping[key]
+print('Your total is', total)
