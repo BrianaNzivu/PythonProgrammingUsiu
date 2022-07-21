@@ -36,6 +36,13 @@ shopping = {
     'milk':110
 }
 
+# Print prices less than input entered
+price = int(input("What is your budget amount?"))
+
+for key in shopping:
+    if shopping[key] <= price:
+        print(key, shopping[key])
+
 total = 0
 for key in shopping:
     total = total + shopping[key]
