@@ -13,4 +13,4 @@ print(data.upper())
 print(data.find("rules"))
 
 # Replace the exclamation point with a question mark.
-print(data.replace("!", "?"))
+print(data.replace("!"))
