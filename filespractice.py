@@ -16,3 +16,10 @@ while True:
   break
  print(line[:-1])
 
+#Counting the number of words
+myFile = open('shopping.txt', 'r')
+wordCount = 0
+
+for line in myFile:
+ wordCount += len(line.split())
+print(wordCount)
