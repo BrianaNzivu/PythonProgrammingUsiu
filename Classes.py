@@ -19,6 +19,9 @@ class Person:
     def set_height(self, height):
         self._height = height
 
+    def __str__(self):
+        return 'Name: ' + self._name + '\nHeight: ' + str(self._height)
+
 p = Person('Jane', 12345, 3)
 print('Name:', p.get_name())
 print("Id Number:", p.get_id_num())
