@@ -66,8 +66,6 @@ for key in myShopping:
 # More advanced shopping one using functions
 def calculateTotal (d):
     total = 0
-    for key in d:
-        total = total + d[key]
-    return total
+
 
 print('Your shopping will cost', calculateTotal(myShopping))
