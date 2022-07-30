@@ -1,0 +1,5 @@
+Mangoes 200
+Sugar 240
+Bananas 100
+Eggs 124
+Juice 195

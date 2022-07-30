@@ -8,13 +8,21 @@ Practice on functions for finals
 # print(sqrt(n))
 
 # Checks if a number is even
-def checkEven(x):
-    return x % 2
+# def checkEven(x):
+#     return x % 2
+#
+# x = float(input("Enter number: "))
+# divide = checkEven(x)
+#
+# if divide > 0.0:
+#     print('Number is odd')
+# else:
+#     print('Number is even')
 
-x = float(input("Enter number: "))
-divide = checkEven(x)
+# Adds numbers
+def summation (low, high):
+    return low + high
 
-if divide > 0.0:
-    print('Number is odd')
-else:
-    print('Number is even')
+low = float(input('Enter your low number: '))
+high = float(input('Enter your high number: '))
+print(summation(low, high))
